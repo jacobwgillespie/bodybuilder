@@ -250,6 +250,19 @@ declare namespace bodybuilder {
 			name: string,
 			subaggregations: SubAggregationFn
 		): B;
+		aggregation(type: string | object, options: object): B;
+		aggregation(type: string | object, options: object, name: string): B;
+		aggregation(
+			type: string | object,
+			options: object,
+			subaggregations: SubAggregationFn
+		): B;
+		aggregation(
+			type: string | object,
+			options: object,
+			name: string,
+			subaggregations: SubAggregationFn
+		): B;
 		aggregation(type: string | object, field: string, options: object): B;
 		aggregation(
 			type: string | object,
@@ -280,6 +293,19 @@ declare namespace bodybuilder {
 		agg(
 			type: string | object,
 			field: string,
+			name: string,
+			subaggregations: SubAggregationFn
+		): B;
+		agg(type: string | object, options: object): B;
+		agg(type: string | object, options: object, name: string): B;
+		agg(
+			type: string | object,
+			options: object,
+			subaggregations: SubAggregationFn
+		): B;
+		agg(
+			type: string | object,
+			options: object,
 			name: string,
 			subaggregations: SubAggregationFn
 		): B;
