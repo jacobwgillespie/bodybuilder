@@ -337,7 +337,7 @@ declare namespace bodybuilder {
 		sort(field: string, direction: string): Bodybuilder;
 		sort(field: string, body: object): Bodybuilder;
 		sort(fields: string[]): Bodybuilder;
-		sort(fields: Array<{ [field: string]: string | object }>): Bodybuilder;
+		sort(fields: Array<string | { [field: string]: string | object }>): Bodybuilder;
 		from(quantity: number): Bodybuilder;
 		size(quantity: number): Bodybuilder;
 		rawOption(k: string, v: any): Bodybuilder;
